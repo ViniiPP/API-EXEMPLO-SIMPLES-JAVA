@@ -1,0 +1,15 @@
+### listar usuarios Get
+GET http://localhost:8080/usuarios
+
+### Criar usuarios Post
+POST http://localhost:8080/usuarios
+content-type: application/json
+
+{
+  "id": 1,
+  "nome": "Vinicius Pereira Polli",
+  "email": "teste@teste.com"
+}
+
+### Listar usuario especifico
+GET http://localhost:8080/usuarios/1
