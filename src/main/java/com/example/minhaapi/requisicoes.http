@@ -1,15 +1,34 @@
-### listar usuarios Get
-GET http://localhost:8080/usuarios
-
 ### Criar usuarios Post
 POST http://localhost:8080/usuarios
 content-type: application/json
 
 {
   "id": 1,
-  "nome": "Vinicius Pereira Polli",
+  "nome": "Vinicius",
   "email": "teste@teste.com"
 }
 
+### listar usuarios Get
+GET http://localhost:8080/usuarios
+
 ### Listar usuario especifico
 GET http://localhost:8080/usuarios/1
+
+### atualizar usuario
+PUT http://localhost:8080/usuarios/1
+content-type: application/json
+
+{
+  "id": 1,
+  "nome": "Beatriz",
+  "email": "teste2@teste.com.br"
+}
+
+### Listar usuario especifico pós troca de infos
+GET http://localhost:8080/usuarios/1
+
+### deletar user
+DELETE http://localhost:8080/usuarios/1
+
+### listar usuarios Get
+GET http://localhost:8080/usuarios
